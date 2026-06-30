@@ -4,7 +4,7 @@
 ![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-Here’s a **fancy, eye-catching README** you can directly paste into your GitHub repository. It’s designed to look professional and portfolio-ready:
+
 
 ---
 
