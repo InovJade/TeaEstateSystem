@@ -8,9 +8,7 @@
 
 
 
----
 
-```md id="company1"
 <h1 align="center">🌱 TeaEstate Pro</h1>
 
 <p align="center">
