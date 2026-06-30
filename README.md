@@ -56,7 +56,7 @@ It replaces manual workflows with a centralized, structured, and scalable manage
 
 ## 🧠 System Architecture
 
-```
+
 
 Presentation Layer (Windows Forms UI)
 ↓
@@ -66,7 +66,7 @@ Data Access Layer (ADO.NET)
 ↓
 SQL Server Database
 
-````
+
 
 ---
 
@@ -121,23 +121,12 @@ TeaEstate Pro is developed as an enterprise-grade simulation system demonstratin
 
 © 2026 TeaEstate Pro. Educational use permitted.
 
-```
 
----
 
-# 🔥 2. GitHub “About Section” (IMPORTANT)
 
-Paste this in your repo About box:
-
-> 🌱 Enterprise Tea Estate Management System built with C# and SQL Server for workforce, attendance, and production management with a scalable layered architecture.
-
----
-
-# 🎯 3. Add This to Make It LOOK REAL COMPANY LEVEL
 
 ## Create folder structure:
 
-```
 
 /TeaEstatePro
 ├── /UI
@@ -150,14 +139,9 @@ Paste this in your repo About box:
 
 ````
 
-This instantly makes it look like:
-👉 enterprise software, not student code
 
----
 
-# 🚀 4. Extra “WOW Factor” (Optional but powerful)
 
-Add this under header for animation style feel:
 
 ```md id="wow1"
 <p align="center">
