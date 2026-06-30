@@ -112,12 +112,4 @@ This project is open for educational use.
 
 ---
 
-### 💡 If you want it even better
-I can also help you:
-- Add **GitHub badges (C#, .NET, SQL Server, build status)**
-- Add **screenshots section with nice layout**
-- Create a **fancy project logo/banner**
-- Write a **professional project report (PDF)**
 
-Just tell me 👍
-```
