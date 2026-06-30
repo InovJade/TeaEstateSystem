@@ -87,7 +87,7 @@ SQL Server Database
 
 ## ⚙️ Installation
 
-```bash
+
 git clone https://github.com/inovjade/TeaEstateSystem.git
 Open project in Visual Studio
 Restore NuGet packages
