@@ -103,7 +103,11 @@ Run the application
 📊 Advanced analytics dashboard
 🏢 About This Project
 
+---
+
 TeaEstate Pro is developed as an enterprise-grade simulation system demonstrating real-world software engineering practices including layered architecture, database design, and scalable desktop application development.
+
+---
 
 📂 Project Structure
 TeaEstatePro/
@@ -114,9 +118,13 @@ TeaEstatePro/
 ├── Database/
 ├── Images/
 └── README.md
+---
+
 📜 License
+---
 
 © 2026 TeaEstate Pro. Educational use permitted.
+---
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&size=22&pause=1000&center=true&vCenter=true&width=600&lines=Enterprise+Tea+Estate+Management+System;C%23+.NET+Windows+Forms+Application;Built+for+Real-World+Operations" />
