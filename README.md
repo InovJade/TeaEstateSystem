@@ -82,9 +82,9 @@ SQL Server Database
 
 ## ⚙️ Installation
 
-```bash id="inst1"
+ bash id="inst1"
 git clone https://github.com/inovjade/TeaEstateSystem.git
-````
+
 
 1. Open project in Visual Studio
 2. Restore NuGet packages
@@ -137,18 +137,17 @@ TeaEstate Pro is developed as an enterprise-grade simulation system demonstratin
 ├── /Images
 ├── README.md
 
-````
 
 
 
 
 
-```md id="wow1"
+md id="wow1"
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Segoe+UI&size=22&pause=1000&center=true&vCenter=true&width=600&lines=Enterprise+Tea+Estate+Management+System;C%23+.NET+Windows+Forms+Application;Built+for+Real-World+Operations" />
 </p>
-````
 
----
+
+
 
 
