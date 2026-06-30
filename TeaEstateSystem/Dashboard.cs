@@ -35,5 +35,16 @@ namespace TeaEstateSystem
         {
 
         }
+
+        private void lblRole_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorkers_Click(object sender, EventArgs e)
+        {
+            WorkersForm frm = new WorkersForm();
+            frm.ShowDialog();
+        }
     }
 }

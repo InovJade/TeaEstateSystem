@@ -30,12 +30,13 @@
         {
             this.lblUser = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
+            this.btnWorkers = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUser
             // 
             this.lblUser.AutoSize = true;
-            this.lblUser.Location = new System.Drawing.Point(335, 145);
+            this.lblUser.Location = new System.Drawing.Point(341, 150);
             this.lblUser.Name = "lblUser";
             this.lblUser.Size = new System.Drawing.Size(60, 13);
             this.lblUser.TabIndex = 0;
@@ -45,17 +46,29 @@
             // lblRole
             // 
             this.lblRole.AutoSize = true;
-            this.lblRole.Location = new System.Drawing.Point(335, 220);
+            this.lblRole.Location = new System.Drawing.Point(341, 202);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(54, 13);
             this.lblRole.TabIndex = 1;
             this.lblRole.Text = "Your Role";
+            this.lblRole.Click += new System.EventHandler(this.lblRole_Click);
+            // 
+            // btnWorkers
+            // 
+            this.btnWorkers.Location = new System.Drawing.Point(321, 266);
+            this.btnWorkers.Name = "btnWorkers";
+            this.btnWorkers.Size = new System.Drawing.Size(100, 38);
+            this.btnWorkers.TabIndex = 2;
+            this.btnWorkers.Text = "Workers";
+            this.btnWorkers.UseVisualStyleBackColor = true;
+            this.btnWorkers.Click += new System.EventHandler(this.btnWorkers_Click);
             // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnWorkers);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblUser);
             this.Name = "Dashboard";
@@ -70,5 +83,6 @@
 
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblRole;
+        private System.Windows.Forms.Button btnWorkers;
     }
 }
