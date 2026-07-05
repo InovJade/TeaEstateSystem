@@ -1,15 +1,15 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System.Data.SqlClient;
 
 namespace TeaEstateSystem
 {
     public class DBConnection
     {
-        private string connectionString =
-            "server=localhost;database=TeaEstateDB;uid=root;pwd=Samantha@112233;";
+        private string connStr =
+            "Server=localhost\\SQLEXPRESS;Database=TeaEstateDB;Trusted_Connection=True;";
 
-        public MySqlConnection GetConnection()
+        public SqlConnection GetConnection()
         {
-            return new MySqlConnection(connectionString);
+            return new SqlConnection(connStr);
         }
     }
 }

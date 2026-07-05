@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,20 +34,20 @@ namespace TeaEstateSystem
             {
                 DBConnection db = new DBConnection();
 
-                using (MySqlConnection conn = db.GetConnection())
+                using (SqlConnection conn = db.GetConnection())
                 {
                     conn.Open();
 
                     string query =
                         "SELECT * FROM Users WHERE Username=@user AND PasswordHash=@pass";
 
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    SqlCommand cmd = new SqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@user", txtUsername.Text);
                     cmd.Parameters.AddWithValue("@pass",
                         PasswordHelper.HashPassword(txtPassword.Text));
 
-                    MySqlDataReader reader = cmd.ExecuteReader();
+                     SqlDataReader reader = cmd.ExecuteReader();
 
                     if (reader.Read())
                     {

@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+﻿using System.Data.SqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,7 +29,7 @@ namespace TeaEstateSystem
             {
                 DBConnection db = new DBConnection();
 
-                using (MySqlConnection conn = db.GetConnection())
+                using (SqlConnection conn = db.GetConnection())
                 {
                     conn.Open();
 
@@ -37,7 +37,7 @@ namespace TeaEstateSystem
                         "INSERT INTO Users (FullName, Username, PasswordHash, Role) " +
                         "VALUES (@name, @user, @pass, @role)";
 
-                    MySqlCommand cmd = new MySqlCommand(query, conn);
+                    SqlCommand cmd = new SqlCommand(query, conn);
 
                     cmd.Parameters.AddWithValue("@name", txtFullName.Text);
                     cmd.Parameters.AddWithValue("@user", txtUsername.Text);
