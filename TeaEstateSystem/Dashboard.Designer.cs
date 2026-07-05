@@ -31,6 +31,7 @@
             this.lblUser = new System.Windows.Forms.Label();
             this.lblRole = new System.Windows.Forms.Label();
             this.btnWorkers = new System.Windows.Forms.Button();
+            this.btnAttendance = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUser
@@ -55,7 +56,7 @@
             // 
             // btnWorkers
             // 
-            this.btnWorkers.Location = new System.Drawing.Point(321, 266);
+            this.btnWorkers.Location = new System.Drawing.Point(320, 236);
             this.btnWorkers.Name = "btnWorkers";
             this.btnWorkers.Size = new System.Drawing.Size(100, 38);
             this.btnWorkers.TabIndex = 2;
@@ -63,11 +64,22 @@
             this.btnWorkers.UseVisualStyleBackColor = true;
             this.btnWorkers.Click += new System.EventHandler(this.btnWorkers_Click);
             // 
+            // btnAttendance
+            // 
+            this.btnAttendance.Location = new System.Drawing.Point(320, 291);
+            this.btnAttendance.Name = "btnAttendance";
+            this.btnAttendance.Size = new System.Drawing.Size(100, 34);
+            this.btnAttendance.TabIndex = 3;
+            this.btnAttendance.Text = "Attendance";
+            this.btnAttendance.UseVisualStyleBackColor = true;
+            this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAttendance);
             this.Controls.Add(this.btnWorkers);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.lblUser);
@@ -84,5 +96,6 @@
         private System.Windows.Forms.Label lblUser;
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Button btnWorkers;
+        private System.Windows.Forms.Button btnAttendance;
     }
 }
