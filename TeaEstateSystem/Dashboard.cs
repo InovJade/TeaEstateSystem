@@ -46,5 +46,11 @@ namespace TeaEstateSystem
             WorkersForm frm = new WorkersForm();
             frm.ShowDialog();
         }
+
+        private void btnAttendance_Click(object sender, EventArgs e)
+        {
+            AttendanceForm af = new AttendanceForm();
+            af.Show();
+        }
     }
 }
