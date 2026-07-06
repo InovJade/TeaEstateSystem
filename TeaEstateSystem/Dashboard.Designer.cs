@@ -32,6 +32,8 @@
             this.lblRole = new System.Windows.Forms.Label();
             this.btnWorkers = new System.Windows.Forms.Button();
             this.btnAttendance = new System.Windows.Forms.Button();
+            this.btnTeaCollection = new System.Windows.Forms.Button();
+            this.btnSections = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblUser
@@ -56,7 +58,7 @@
             // 
             // btnWorkers
             // 
-            this.btnWorkers.Location = new System.Drawing.Point(320, 236);
+            this.btnWorkers.Location = new System.Drawing.Point(320, 238);
             this.btnWorkers.Name = "btnWorkers";
             this.btnWorkers.Size = new System.Drawing.Size(100, 38);
             this.btnWorkers.TabIndex = 2;
@@ -74,11 +76,33 @@
             this.btnAttendance.UseVisualStyleBackColor = true;
             this.btnAttendance.Click += new System.EventHandler(this.btnAttendance_Click);
             // 
+            // btnTeaCollection
+            // 
+            this.btnTeaCollection.Location = new System.Drawing.Point(320, 331);
+            this.btnTeaCollection.Name = "btnTeaCollection";
+            this.btnTeaCollection.Size = new System.Drawing.Size(100, 40);
+            this.btnTeaCollection.TabIndex = 4;
+            this.btnTeaCollection.Text = "Tea Collection";
+            this.btnTeaCollection.UseVisualStyleBackColor = true;
+            this.btnTeaCollection.Click += new System.EventHandler(this.btnTeaCollection_Click);
+            // 
+            // btnSections
+            // 
+            this.btnSections.Location = new System.Drawing.Point(320, 377);
+            this.btnSections.Name = "btnSections";
+            this.btnSections.Size = new System.Drawing.Size(100, 36);
+            this.btnSections.TabIndex = 5;
+            this.btnSections.Text = "Sections";
+            this.btnSections.UseVisualStyleBackColor = true;
+            this.btnSections.Click += new System.EventHandler(this.btnSections_Click_1);
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSections);
+            this.Controls.Add(this.btnTeaCollection);
             this.Controls.Add(this.btnAttendance);
             this.Controls.Add(this.btnWorkers);
             this.Controls.Add(this.lblRole);
@@ -97,5 +121,7 @@
         private System.Windows.Forms.Label lblRole;
         private System.Windows.Forms.Button btnWorkers;
         private System.Windows.Forms.Button btnAttendance;
+        private System.Windows.Forms.Button btnTeaCollection;
+        private System.Windows.Forms.Button btnSections;
     }
 }
