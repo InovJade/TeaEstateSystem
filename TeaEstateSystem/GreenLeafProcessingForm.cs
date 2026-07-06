@@ -23,6 +23,11 @@ namespace TeaEstateSystem
 
         private void GreenLeafProcessingForm_Load(object sender, EventArgs e)
         {
+            if (UserSession.Role == "Clerk")
+            {
+                btnDelete.Visible = false;
+            }
+
             LoadCollections();
             LoadProcessing();
         }

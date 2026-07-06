@@ -34,7 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbRole = new System.Windows.Forms.ComboBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -87,20 +86,6 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Password";
             // 
-            // cmbRole
-            // 
-            this.cmbRole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbRole.FormattingEnabled = true;
-            this.cmbRole.Items.AddRange(new object[] {
-            "Manager",
-            "Supervisor",
-            "Clerk"});
-            this.cmbRole.Location = new System.Drawing.Point(523, 241);
-            this.cmbRole.Name = "cmbRole";
-            this.cmbRole.Size = new System.Drawing.Size(121, 21);
-            this.cmbRole.TabIndex = 6;
-            this.cmbRole.SelectedIndexChanged += new System.EventHandler(this.cmbRole_SelectedIndexChanged);
-            // 
             // btnCreate
             // 
             this.btnCreate.Location = new System.Drawing.Point(347, 315);
@@ -117,7 +102,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.cmbRole);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -140,7 +124,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbRole;
         private System.Windows.Forms.Button btnCreate;
     }
 }

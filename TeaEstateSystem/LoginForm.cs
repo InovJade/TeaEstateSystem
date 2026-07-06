@@ -54,6 +54,9 @@ namespace TeaEstateSystem
                         string username = reader["Username"].ToString();
                         string role = reader["Role"].ToString();
 
+                        UserSession.Username = username;
+                        UserSession.Role = role;
+
                         Dashboard d = new Dashboard(username, role);
 
                         d.Show();

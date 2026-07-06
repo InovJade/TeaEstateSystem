@@ -23,6 +23,11 @@ namespace TeaEstateSystem
 
         private void PredictionForm_Load(object sender, EventArgs e)
         {
+            if (UserSession.Role == "Clerk")
+            {
+                btnDelete.Visible = false;
+            }
+
             LoadSections();
             LoadPredictionHistory();
             ClearFields();

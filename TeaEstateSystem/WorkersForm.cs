@@ -46,6 +46,10 @@ namespace TeaEstateSystem
 
         private void WorkersForm_Load(object sender, EventArgs e)
         {
+            if (UserSession.Role == "Clerk")
+            {
+                btnDelete.Visible = false;
+            }
             LoadWorkers();
         }
 

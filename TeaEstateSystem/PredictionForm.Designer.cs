@@ -210,7 +210,7 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(289, 419);
+            this.btnDelete.Location = new System.Drawing.Point(484, 419);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(75, 23);
             this.btnDelete.TabIndex = 18;
@@ -220,7 +220,7 @@
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(380, 419);
+            this.btnClear.Location = new System.Drawing.Point(390, 419);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 19;
@@ -230,7 +230,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(470, 419);
+            this.btnRefresh.Location = new System.Drawing.Point(295, 419);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(75, 23);
             this.btnRefresh.TabIndex = 20;

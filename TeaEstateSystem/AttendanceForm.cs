@@ -20,6 +20,17 @@ namespace TeaEstateSystem
 
         private void AttendanceForm_Load(object sender, EventArgs e)
         {
+            if (UserSession.Role == "Clerk")
+            {
+                btnDeleteAttendance.Visible = false;
+                btnDeleteRange.Visible = false;
+                dtpFrom.Visible = false;
+                dtpTo.Visible = false;
+                label1.Visible = false;
+                label3.Visible = false;
+                label4.Visible = false;
+            }
+
             LoadWorkers();
             LoadAttendance();
         }
@@ -78,11 +89,6 @@ namespace TeaEstateSystem
 
                 dgvAttendance.DataSource = dt;
             }
-        }
-
-        private void cmbStatus_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnMarkAttendance_Click(object sender, EventArgs e)
@@ -151,11 +157,6 @@ namespace TeaEstateSystem
                 LoadAttendance();
                 ClearFields();
             }
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDeleteRange_Click(object sender, EventArgs e)
