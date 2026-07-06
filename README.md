@@ -108,21 +108,41 @@ TeaEstate Pro is developed as an enterprise-grade simulation system demonstratin
 
 ---
 
-📂 Project Structure
-TeaEstatePro/
-├── UI/
-├── Models/
-├── DataAccess/
-├── Services/
-├── Database/
-├── Images/
-└── README.md
+Tea Estate Crop & Labour Management System
+Version 1.0
+
+Developed by:
+Esindu Amarajeewa
+
+Technologies:
+- C# Windows Forms (.NET Framework)
+- Microsoft Azure SQL Database
+- Visual Studio 2022
+
+Installation:
+1. Run setup.exe.
+2. Follow the installation wizard.
+3. Launch the application from the Desktop or Start Menu.
+
+System Features:
+- User Authentication
+- Role-Based Access (Manager / Clerk)
+- Workers Management
+- Attendance Management
+- Sections Management
+- Tea Collection
+- Green Leaf Processing
+- Tea Yield Prediction
+- Reports Dashboard
+
+Copyright © 2026 Esindu Amarajeewa.
+All Rights Reserved.
 ---
 
 📜 License
 ---
 
-© 2026 TeaEstate Pro. Educational use permitted.
+© 2026 Esindu Amarajeewa. 
 ---
 
 <p align="center">
