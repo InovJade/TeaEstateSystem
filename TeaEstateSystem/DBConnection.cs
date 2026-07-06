@@ -1,11 +1,12 @@
-﻿using System.Data.SqlClient;
+﻿using System.Configuration;
+using System.Data.SqlClient;
 
 namespace TeaEstateSystem
 {
     public class DBConnection
     {
-        private string connStr =
-            "Server=localhost\\SQLEXPRESS;Database=TeaEstateDB;Trusted_Connection=True;";
+        private readonly string connStr =
+            ConfigurationManager.ConnectionStrings["TeaEstateDB"].ConnectionString;
 
         public SqlConnection GetConnection()
         {
