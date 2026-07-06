@@ -52,5 +52,17 @@ namespace TeaEstateSystem
             AttendanceForm af = new AttendanceForm();
             af.Show();
         }
+
+        private void btnTeaCollection_Click(object sender, EventArgs e)
+        {
+            TeaCollectionForm teaForm = new TeaCollectionForm();
+            teaForm.Show();
+        }
+
+        private void btnSections_Click_1(object sender, EventArgs e)
+        {
+            SectionsForm sectionsForm = new SectionsForm();
+            sectionsForm.Show();
+        }
     }
 }
