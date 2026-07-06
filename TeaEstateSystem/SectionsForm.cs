@@ -33,6 +33,11 @@ namespace TeaEstateSystem
 
         private void SectionsForm_Load(object sender, EventArgs e)
         {
+            if (UserSession.Role == "Clerk")
+            {
+                btnDelete.Visible = false;
+            }
+
             LoadSections();
 
             LoadTeaTypes();
