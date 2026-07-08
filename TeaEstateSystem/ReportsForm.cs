@@ -21,6 +21,7 @@ namespace TeaEstateSystem
 
         private void ReportsForm_Load(object sender, EventArgs e)
         {
+            
 
             cmbReportType.SelectedIndex = 0;
             cmbReportType.SelectedIndex = 0;

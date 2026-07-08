@@ -176,5 +176,10 @@ namespace TeaEstateSystem
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

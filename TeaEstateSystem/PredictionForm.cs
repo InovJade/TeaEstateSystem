@@ -503,5 +503,15 @@ namespace TeaEstateSystem
 
             return Math.Round(accuracy, 2);
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRefresh_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
