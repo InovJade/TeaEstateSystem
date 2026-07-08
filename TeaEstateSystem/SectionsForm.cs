@@ -293,5 +293,20 @@ namespace TeaEstateSystem
             dtpLastPlucking.Value = DateTime.Today;
             dtpNextPlucking.Value = DateTime.Today;
         }
+
+        private void label5_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSave_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

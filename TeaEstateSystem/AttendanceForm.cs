@@ -197,5 +197,9 @@ namespace TeaEstateSystem
             dtpDate.Value = DateTime.Today;
         }
 
+        private void guna2HtmlLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

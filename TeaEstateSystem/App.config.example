@@ -3,43 +3,43 @@
 
 	<connectionStrings>
 		<add name="TeaEstateDB"
-			 connectionString="Server=tcp:teaestate-esindu-2026.database.windows.net,1433;
-                           Initial Catalog=Your_db;
+		  connectionString="Server=tcp:your_db_address;
+                           Initial Catalog=db_name;
                            Persist Security Info=False;
-                           User ID=Your_admin;
-                           Password=Your_password;
+                           User ID=ur_admin;
+                           Password=ur_password;
                            MultipleActiveResultSets=False;
                            Encrypt=True;
                            TrustServerCertificate=False;
                            Connection Timeout=30;"
-			 providerName="System.Data.SqlClient"/>
+		  providerName="System.Data.SqlClient"/>
 	</connectionStrings>
 
-	<startup> 
-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
-    </startup>
-  <runtime>
-    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
-      <dependentAssembly>
-        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-6.0.3.0" newVersion="6.0.3.0" />
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-4.0.5.0" newVersion="4.0.5.0" />
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-4.0.5.0" newVersion="4.0.5.0" />
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="System.IO.Pipelines" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-10.0.0.9" newVersion="10.0.0.9" />
-      </dependentAssembly>
-      <dependentAssembly>
-        <assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
-        <bindingRedirect oldVersion="0.0.0.0-4.2.4.0" newVersion="4.2.4.0" />
-      </dependentAssembly>
-    </assemblyBinding>
-  </runtime>
+	<startup>
+		<supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+	</startup>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="System.Runtime.CompilerServices.Unsafe" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-6.0.3.0" newVersion="6.0.3.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-4.0.5.0" newVersion="4.0.5.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Buffers" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-4.0.5.0" newVersion="4.0.5.0" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.IO.Pipelines" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-10.0.0.9" newVersion="10.0.0.9" />
+			</dependentAssembly>
+			<dependentAssembly>
+				<assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51" culture="neutral" />
+				<bindingRedirect oldVersion="0.0.0.0-4.2.4.0" newVersion="4.2.4.0" />
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
 </configuration>

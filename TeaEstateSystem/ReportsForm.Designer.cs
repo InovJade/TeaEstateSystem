@@ -28,28 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbReportType = new System.Windows.Forms.ComboBox();
-            this.btnLoadReport = new System.Windows.Forms.Button();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.Button();
-            this.dgvReports = new System.Windows.Forms.DataGridView();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.btnLoadReport = new Guna.UI2.WinForms.Guna2Button();
+            this.label14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.cmbReportType = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.dgvReports = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // btnLoadReport
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(320, 39);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tea Estate Report Center";
+            this.btnLoadReport.BorderColor = System.Drawing.Color.DarkGreen;
+            this.btnLoadReport.BorderRadius = 8;
+            this.btnLoadReport.BorderThickness = 2;
+            this.btnLoadReport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoadReport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLoadReport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLoadReport.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLoadReport.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnLoadReport.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnLoadReport.ForeColor = System.Drawing.Color.Black;
+            this.btnLoadReport.Image = global::TeaEstateSystem.Properties.Resources.hbjnk_removebg_preview1;
+            this.btnLoadReport.Location = new System.Drawing.Point(308, 162);
+            this.btnLoadReport.Name = "btnLoadReport";
+            this.btnLoadReport.Size = new System.Drawing.Size(131, 41);
+            this.btnLoadReport.TabIndex = 37;
+            this.btnLoadReport.Text = "Load Report";
+            this.btnLoadReport.Click += new System.EventHandler(this.btnLoadReport_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = false;
+            this.label14.BackColor = System.Drawing.Color.Transparent;
+            this.label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(423, 38);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(254, 27);
+            this.label14.TabIndex = 36;
+            this.label14.Text = "Tea Estate Report Center";
             // 
             // cmbReportType
             // 
+            this.cmbReportType.BackColor = System.Drawing.Color.Transparent;
+            this.cmbReportType.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            this.cmbReportType.BorderRadius = 10;
+            this.cmbReportType.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbReportType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbReportType.FormattingEnabled = true;
+            this.cmbReportType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.cmbReportType.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbReportType.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbReportType.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbReportType.ForeColor = System.Drawing.Color.White;
+            this.cmbReportType.ItemHeight = 30;
             this.cmbReportType.Items.AddRange(new object[] {
             "Workers Report",
             "Attendance Report",
@@ -57,77 +95,135 @@
             "Tea Collection Report",
             "Green Leaf Processing Report",
             "Prediction Report"});
-            this.cmbReportType.Location = new System.Drawing.Point(327, 94);
+            this.cmbReportType.Location = new System.Drawing.Point(423, 95);
             this.cmbReportType.Name = "cmbReportType";
-            this.cmbReportType.Size = new System.Drawing.Size(121, 21);
-            this.cmbReportType.TabIndex = 1;
+            this.cmbReportType.Size = new System.Drawing.Size(191, 36);
+            this.cmbReportType.TabIndex = 38;
             this.cmbReportType.SelectedIndexChanged += new System.EventHandler(this.cmbReportType_SelectedIndexChanged);
-            // 
-            // btnLoadReport
-            // 
-            this.btnLoadReport.Location = new System.Drawing.Point(234, 160);
-            this.btnLoadReport.Name = "btnLoadReport";
-            this.btnLoadReport.Size = new System.Drawing.Size(75, 23);
-            this.btnLoadReport.TabIndex = 2;
-            this.btnLoadReport.Text = "LoadReport";
-            this.btnLoadReport.UseVisualStyleBackColor = true;
-            this.btnLoadReport.Click += new System.EventHandler(this.btnLoadReport_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(355, 160);
+            this.btnRefresh.BorderColor = System.Drawing.Color.DarkGreen;
+            this.btnRefresh.BorderRadius = 8;
+            this.btnRefresh.BorderThickness = 2;
+            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefresh.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnRefresh.ForeColor = System.Drawing.Color.Black;
+            this.btnRefresh.Image = global::TeaEstateSystem.Properties.Resources.hbjnk_removebg_preview1;
+            this.btnRefresh.Location = new System.Drawing.Point(455, 162);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(75, 23);
-            this.btnRefresh.TabIndex = 3;
+            this.btnRefresh.Size = new System.Drawing.Size(131, 41);
+            this.btnRefresh.TabIndex = 39;
             this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnClose
             // 
-            this.btnClose.Location = new System.Drawing.Point(486, 160);
+            this.btnClose.BorderColor = System.Drawing.Color.DarkGreen;
+            this.btnClose.BorderRadius = 8;
+            this.btnClose.BorderThickness = 2;
+            this.btnClose.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClose.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClose.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnClose.ForeColor = System.Drawing.Color.Black;
+            this.btnClose.Image = global::TeaEstateSystem.Properties.Resources.hbjnk_removebg_preview1;
+            this.btnClose.Location = new System.Drawing.Point(603, 162);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(75, 23);
-            this.btnClose.TabIndex = 4;
+            this.btnClose.Size = new System.Drawing.Size(131, 41);
+            this.btnClose.TabIndex = 40;
             this.btnClose.Text = "Close";
-            this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // dgvReports
             // 
-            this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReports.Location = new System.Drawing.Point(31, 205);
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvReports.BackgroundColor = System.Drawing.Color.LightGray;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvReports.ColumnHeadersHeight = 4;
+            this.dgvReports.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReports.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvReports.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dgvReports.Location = new System.Drawing.Point(26, 233);
             this.dgvReports.Name = "dgvReports";
-            this.dgvReports.Size = new System.Drawing.Size(743, 218);
-            this.dgvReports.TabIndex = 5;
+            this.dgvReports.RowHeadersVisible = false;
+            this.dgvReports.RowHeadersWidth = 51;
+            this.dgvReports.RowTemplate.Height = 24;
+            this.dgvReports.Size = new System.Drawing.Size(991, 268);
+            this.dgvReports.TabIndex = 51;
+            this.dgvReports.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dgvReports.ThemeStyle.BackColor = System.Drawing.Color.LightGray;
+            this.dgvReports.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.dgvReports.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvReports.ThemeStyle.HeaderStyle.Height = 4;
+            this.dgvReports.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.dgvReports.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvReports.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.White;
+            this.dgvReports.ThemeStyle.RowsStyle.Height = 24;
+            this.dgvReports.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.MediumSeaGreen;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BorderRadius = 20;
+            this.guna2Panel1.Controls.Add(this.label14);
+            this.guna2Panel1.Controls.Add(this.dgvReports);
+            this.guna2Panel1.Controls.Add(this.cmbReportType);
+            this.guna2Panel1.Controls.Add(this.btnClose);
+            this.guna2Panel1.Controls.Add(this.btnLoadReport);
+            this.guna2Panel1.Controls.Add(this.btnRefresh);
+            this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(12, 12);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1043, 530);
+            this.guna2Panel1.TabIndex = 52;
             // 
             // ReportsForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dgvReports);
-            this.Controls.Add(this.btnClose);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnLoadReport);
-            this.Controls.Add(this.cmbReportType);
-            this.Controls.Add(this.label1);
+            this.BackgroundImage = global::TeaEstateSystem.Properties.Resources.images__7_8;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.guna2Panel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ReportsForm";
             this.Text = "Tea Estate Reports";
             this.Load += new System.EventHandler(this.ReportsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cmbReportType;
-        private System.Windows.Forms.Button btnLoadReport;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.DataGridView dgvReports;
+        private Guna.UI2.WinForms.Guna2Button btnLoadReport;
+        private Guna.UI2.WinForms.Guna2HtmlLabel label14;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbReportType;
+        private Guna.UI2.WinForms.Guna2Button btnRefresh;
+        private Guna.UI2.WinForms.Guna2Button btnClose;
+        private Guna.UI2.WinForms.Guna2DataGridView dgvReports;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
