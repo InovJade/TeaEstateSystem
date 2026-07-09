@@ -200,9 +200,7 @@ namespace TeaEstateSystem
 
                     int sectionID = Convert.ToInt32(cmbSection.SelectedValue);
 
-                    //-----------------------------------
-                    // Average Historical Yield
-                    //-----------------------------------
+                    //avg yeild==
 
                     decimal averageYield = 0;
 
@@ -217,9 +215,7 @@ namespace TeaEstateSystem
 
                     txtAverageYield.Text = averageYield.ToString("0.00");
 
-                    //-----------------------------------
-                    // Attendance Percentage
-                    //-----------------------------------
+                   //attend precen
 
                     SqlCommand totalCmd =
                         new SqlCommand("SELECT COUNT(*) FROM Workers", conn);
@@ -245,9 +241,7 @@ namespace TeaEstateSystem
 
                     txtAttendance.Text = (attendance * 100).ToString("0.00");
 
-                    //-----------------------------------
-                    // Plucking Factor
-                    //-----------------------------------
+                    //pluck factor
 
                     SqlCommand sectionCmd = new SqlCommand(@"
                     SELECT LastPluckingDate
@@ -281,9 +275,7 @@ namespace TeaEstateSystem
                     txtPluckingFactor.Text =
                         pluckingFactor.ToString("0.00");
 
-                    //-----------------------------------
-                    // Season Factor
-                    //-----------------------------------
+                    //season fac (dont change btw)
 
                     decimal season =
                         GetSeasonFactor();
@@ -291,9 +283,7 @@ namespace TeaEstateSystem
                     txtSeasonFactor.Text =
                         season.ToString("0.00");
 
-                    //-----------------------------------
-                    // Prediction
-                    //-----------------------------------
+                   // STARRRR of the project prediction
 
                     decimal prediction =
                         averageYield *
@@ -304,9 +294,8 @@ namespace TeaEstateSystem
                     txtPredictedYield.Text =
                         prediction.ToString("0.00");
 
-                    //-----------------------------------
-                    // Formula
-                    //-----------------------------------
+                    //BTS behind the secenes
+                
 
                     txtFormula.Text =
                         averageYield.ToString("0.00")
