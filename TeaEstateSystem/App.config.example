@@ -3,11 +3,11 @@
 
 	<connectionStrings>
 		<add name="TeaEstateDB"
-		  connectionString="Server=tcp:your_db_address;
-                           Initial Catalog=db_name;
+		  connectionString="DB CONNECTION ADRESS;
+                           Initial Catalog=DB NAME;
                            Persist Security Info=False;
-                           User ID=ur_admin;
-                           Password=ur_password;
+                           User ID=ADMIN NAME;
+                           Password=PASSWORDDDD;
                            MultipleActiveResultSets=False;
                            Encrypt=True;
                            TrustServerCertificate=False;
